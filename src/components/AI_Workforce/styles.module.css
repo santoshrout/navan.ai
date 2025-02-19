@@ -1,0 +1,66 @@
+.features {
+  padding: 60px 0px;
+  background: var(--color-dark);
+  transition: all 0.3s ease-in-out;
+}
+.feature_header_black {
+  text-align: center;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  color: var(--text-primary-nStudio);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.feature_header {
+  text-align: center;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  background: linear-gradient(180deg, #2f80ec 0%, #1addf9 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.feature_subtitle2 {
+  text-align: center;
+  color: var(--text-primary-nStudio);
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  margin: auto;
+  width: 75%;
+  margin-top: 20px;
+}
+
+.layer_bg {
+  background: url("@site/static/img/navan/ai_workforce_bg.png");
+  background-size: cover;
+  width: 100%;
+  max-width: 1200px;
+  height: 520px;
+  margin: auto;
+  flex-shrink: 0;
+  border-radius: 24px;
+  background-repeat: no-repeat;
+  margin-top: 50px;
+}
+
+.layer_bg_vid {
+  background: url("@site/static/img/navan/ai_workforce_vid.png");
+  background-size: cover;
+  width: 100%;
+  max-width: 1000px;
+  height: 520px;
+  margin: auto;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}

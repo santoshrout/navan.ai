@@ -21,3 +21,417 @@
   align-items: center;
   justify-content: center;
 }
+
+
+.hero_video {
+  border-radius: 12px;
+}
+.hero_video_container {
+  max-width: 500px;
+  max-height: 500px;
+  padding: 0;
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.2);
+}
+.hero_video_container_aiagents {
+  background: var(--secondary-bg);
+  max-width: 700px;
+  max-height: 530px;
+  padding: 0;
+}
+
+.hero_bg {
+  background: var(--secondary-bg);
+  transition: all 0.3s ease-in-out;
+}
+
+.hero_bg_navanAI {
+  height: 720px;
+  background: var(--secondary-bg);
+  transition: all 0.3s ease-in-out;
+  background-image: url("@site/static/img/navan/market_agent_bg.png");
+  max-width: 1600px;
+  background-size: cover;
+  background-position: left;
+}
+
+.hero_bg_navanAITailor {
+  height: 720px;
+  background: var(--secondary-bg);
+  transition: all 0.3s ease-in-out;
+}
+
+.hero_title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: calc(14px + 3vw);
+  background: linear-gradient(180deg, #2f80ec 0%, #1addf9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero_title_aiagents_black {
+  color: var(--text-primary-nStudio);
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 132%;
+  max-width: 500px;
+}
+
+.hero_title_QR_black {
+  color: var(--text-primary-nStudio);
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 132%;
+  max-width: 500px;
+}
+
+.hero_title_aiagents {
+  background: var(
+    --blue-gradient,
+    linear-gradient(180deg, #2f80ec 0%, #1addf9 100%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 132%;
+  color: #241c15;
+  max-width: 500px;
+}
+
+.hero_title_QR {
+  background: var(
+    --blue-gradient,
+    linear-gradient(180deg, #2f80ec 0%, #1addf9 100%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 132%;
+  color: #241c15;
+  max-width: 500px;
+}
+
+.hero_subtitle_aiagents {
+  font-weight: 500;
+  font-size: 20px;
+  max-width: 475px;
+  font-style: normal;
+  line-height: 130%;
+}
+
+.signInVectorImgBtn_aiagents {
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  background: var(
+    --blue-gradient,
+    linear-gradient(180deg, #2f80ec 0%, #1addf9 100%)
+  );
+  display: inline-flex;
+  height: 48px;
+  padding: 10px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 45px; /* 281.25% */
+}
+
+.signInVectorImgBtn_aiagents:hover {
+  background: var(
+    --blue-gradient,
+    linear-gradient(180deg, #2f80ec 0%, #2f80ec 100%)
+  );
+  transition: all 0.3s ease-in-out;
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.hero_titleblue {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  background: linear-gradient(180deg, #2f80ec 0%, #1addf9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+}
+
+.hero_title_nStudio {
+  background: var(--text-primary-nStudio);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  max-width: 699px;
+  margin-left: 10px;
+}
+.subhero_title_nStudio {
+  background: var(--text-primary-nStudio);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  max-width: 699px;
+  line-height: 132%;
+  text-align: center;
+}
+.hero_subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  max-width: 410px;
+  font-style: normal;
+  line-height: 130%;
+}
+
+.hero_subtitle_nStudio {
+  background: var(--text-primary-nStudio);
+  font-weight: 400;
+  font-size: 20px;
+  max-width: 560px;
+  font-style: normal;
+  line-height: 130%;
+  background-clip: text;
+  text-align: center;
+  margin-left: 40px;
+}
+.scrollTrigger {
+  display: flex;
+  padding-right: 171.7px;
+  justify-content: start;
+  margin-top: 31.7px;
+}
+.scrollTriggerSubtitle {
+  max-height: 22.01px;
+  color: var(--text-primary-nStudio);
+  font-size: 13.781px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 159.637% */
+}
+.container_sub {
+  justify-content: center;
+}
+.hero_content {
+  align-self: center;
+}
+.hero_subtitleHeader {
+  display: flex;
+}
+.heroSubHeader {
+  margin-left: 10px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  max-width: 420px;
+}
+.signInVectorImgBtn {
+  width: 153px;
+  height: 48px;
+  padding: 1.23px 27.561px 1.77px 29.595px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: 500;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  background: linear-gradient(180deg, #2f80ec 0%, #1addf9 100%);
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+}
+.contactImgBtn {
+  width: 153px;
+  height: 48px;
+  padding: 0px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 500;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  border-color: var(--card-bg);
+  justify-content: center;
+  align-items: center;
+  margin-left: 40.34px;
+  background-color: var(--color-dark);
+  position: relative;
+  bottom: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 1224px) {
+  .hero_bg {
+    padding: 60px;
+  }
+  .hero_content {
+    align-self: center;
+  }
+}
+@media screen and (max-width: 996px) {
+  .hero_content {
+    max-width: 500px;
+    align-self: center;
+  }
+
+  .hero_video_container {
+    align-self: center;
+  }
+  .hero_video_container_aiagents {
+    align-self: center;
+  }
+  .container_sub {
+    gap: 30px;
+    flex-direction: column-reverse;
+  }
+  .QR_image_2 {
+    display: none;
+  }
+}
+@media screen and (max-width: 678px) {
+  .hero_bg {
+    padding: 40px 20px;
+  }
+  .hero_content {
+    align-self: center;
+  }
+  .QR_image_2 {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero_bg {
+    padding: 30px 10px;
+  }
+  .hero_content {
+    align-self: center;
+  }
+  .QR_image_2 {
+    display: none;
+  }
+  .hero_bg_navanAI {
+    height: 550px;
+    background: var(--secondary-bg);
+    transition: all 0.3s ease-in-out;
+    background-image: url("@site/static/img/navan/market_agent_bg.png");
+    max-width: 1600px;
+    background-size: cover;
+    background-position: left;
+  }
+  .hero_bg_navanAITailor {
+    height: 870px;
+    background: var(--secondary-bg);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .chatMarket {
+    visibility: hidden;
+  }
+}
+
+.chat {
+  position: absolute;
+  top: 60px;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  color: var(--text-primary);
+  font-weight: 500;
+  font-size: 19px;
+
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+
+  @media screen and (max-width: 1280px) {
+    display: none;
+  }
+
+  @media screen and (max-width: 996px) {
+    right: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    right: 0;
+  }
+  @media screen and (max-width: 480px) {
+    right: 0;
+  }
+}
+
+.chatMarket {
+  position: absolute;
+  top: 350px;
+  left: 55px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  color: var(--text-primary);
+  font-weight: 500;
+  font-size: 20px;
+
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+
+  @media screen and (max-width: 1280px) {
+    display: none;
+  }
+
+  @media screen and (max-width: 996px) {
+    right: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    right: 0;
+  }
+  @media screen and (max-width: 480px) {
+    right: 0;
+  }
+}
+
+@keyframes botAnimate {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  100% {
+    transform: scale(1.1) rotate(-5deg);
+  }
+}
+
+@keyframes slideBg {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

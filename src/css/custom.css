@@ -1,30 +1,186 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
-
-/* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --text-primary: #000000;
+  --text-primary-nStudio: #241c15;
+  --font-large: 40px;
+  --font-medium: 28px;
+  --font-small: 18px;
+  /*--ifm-color-primary: #2e8555;*/
+  /*--ifm-color-primary-dark: #29784c;*/
+  /*--ifm-color-primary-darker: #277148;*/
+  /*--ifm-color-primary-darkest: #205d3b;*/
+  /*--ifm-color-primary-light: #33925d;*/
+  /*--ifm-color-primary-lighter: #359962;*/
+  /*--ifm-color-primary-lightest: #3cad6e;*/
   --ifm-code-font-size: 95%;
+  --card-bg: #ffffff;
+  --color-dark: #f7f9fd;
+  --secondary-bg: #ffffff;
+  --company-bg: #010f3c;
+  --program-bg: #010f3c;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
+.text--truncate {
+  color: black;
+}
+
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+[data-theme="dark"] {
+  /*--ifm-color-primary: #25c2a0;*/
+  /*--ifm-color-primary-dark: #21af90;*/
+  /*--ifm-color-primary-darker: #1fa588;*/
+  /*--ifm-color-primary-darkest: #1a8870;*/
+  /*--ifm-color-primary-light: #29d5b0;*/
+  /*--ifm-color-primary-lighter: #32d8b4;*/
+  /*--ifm-color-primary-lightest: #4fddbf;*/
+  --text-primary: #ffffff;
+  --text-primary-nStudio: #ffffff;
+  --card-bg: #0a1842;
+  --color-dark: #0a1842;
+  --secondary-bg: #010f3c;
+  --company-bg: #0a1842;
+  --program-bg: #0a1842;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+.navbar__link {
+  color: var(--text-primary);
+}
+
+.custom-dropdown-class {
+  background: var(--secondary-bg);
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar .dropdown__menu {
+  margin-top: -3px;
+  background: var(--secondary-bg);
+  transition: all 0.3s ease-in-out;
+}
+.navbar {
+  border-bottom: 1px solid;
+  border-image-source: linear-gradient(90deg, #2f80ec 0%, #1addf9 100%);
+  border-image-slice: 1;
+  height: 90px;
+  padding: 0 120px;
+  background: var(--secondary-bg);
+  transition: all 0.3s ease-in-out;
+}
+.navbar__logo {
+  height: 50px;
+}
+.footer {
+  background: var(--secondary-bg);
+  transition: all 0.3s ease-in-out;
+}
+.clean-btn:last-child {
+  background: rgba(47, 128, 236, 0.2);
+}
+.navbar__link--active {
+  color: #2f80ec;
+}
+.navbar-sidebar__close {
+  background: none !important;
+}
+.navbar-sidebar__brand {
+  border-bottom: 1px solid;
+  border-image-source: linear-gradient(90deg, #2f80ec 0%, #1addf9 100%);
+  border-image-slice: 1;
+  height: 90px;
+  background: var(--secondary-bg);
+}
+.navbar-sidebar__items {
+  background: var(--secondary-bg);
+  transition: all 0.3s ease-in-out;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #2f80ec 0%, #1addf9 100%);
+  border-radius: 10px;
+}
+
+.custom-button-class {
+  width: 87px;
+  height: 40px;
+  flex-shrink: 0;
+  background: linear-gradient(180deg, #2f80ec 0%, #1addf9 100%);
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  text-align: center;
+  margin-right: 10px;
+  color: #ffffff;
+  padding-top: 7px;
+}
+.custom-button-class:hover {
+  color: white;
+}
+
+.rec.rec-arrow {
+  background: linear-gradient(to bottom, #2f80ec 0%, #1addf9 100%);
+  color: #fff;
+}
+
+.online_indicator {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  background-color: #0fcc45;
+  border-radius: 50%;
+  position: relative;
+}
+
+.blink {
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: #0fcc45;
+  opacity: 0.7;
+  border-radius: 50%;
+  animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+  100% {
+    transform: scale(2, 2);
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 1224px) {
+  .navbar {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 1057px) {
+  .navbar {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 1016px) {
+  .navbar {
+    padding: 0 20px;
+  }
+  .footer {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 678px) {
+  .navbar {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar {
+    padding: 0 10px;
+  }
 }

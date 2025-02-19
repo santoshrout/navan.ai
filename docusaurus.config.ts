@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Research Agents | Navan.ai',
+  title: 'AI Agents for Deep Research | Navan.ai',
   tagline: '',
   favicon: "img/navan_favicon_NO_Code_AI.svg",
 
@@ -38,13 +38,14 @@ const config: Config = {
     [
       'classic',
       {
+        /*
         docs: {
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
+        },*/
         blog: {
           showReadingTime: true,
           feedOptions: {
@@ -54,7 +55,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/saaragh/navan.ai/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -71,70 +72,104 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      //title: 'My Site',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: 'Navan AI Logo',
+        src: 'img/logo/navan_main_logo_NO_code_AI.svg',
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Tutorial',
+          to: "/",
+          label: "Home",
+          position: "left",
+          exact: true,
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
+          to: "/contact-us",
+          label: "Contact us",
+          position: "left",
         },
+        {to: '/blog', label: 'Blog', position: 'right'},
+        
       ],
     },
     footer: {
-      style: 'dark',
+      style: 'light',
+      logo: {
+        src: "img/logo/navan_footer_logo_NO_code_AI.svg",
+        alt: "navan.ai Logo",
+        width: "100px",
+        height: "100px",
+      },
       links: [
         {
-          title: 'Docs',
+          title: "Resources",
+          items: [
+            
+            {
+              label: "Blog",
+              to: "/blog",
+            },
+            {
+              label: "Glossary",
+              to: "/category/glossary",
+            },
+            
+          ],
+        },
+        {
+          title: " ",
+        },
+        {
+          title: "Legal",
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: "Privacy Policy",
+              to: "/privacy-policy",
+            },
+            {
+              label: "Terms of Service",
+              to: "/terms-of-use",
             },
           ],
         },
         {
-          title: 'Community',
+          title: " ",
+        },
+        {
+          title: "Community",
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: "Linkedin",
+              href: "https://www.linkedin.com/company/navan-ai/",
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: "Facebook",
+              href: "https://www.facebook.com/getnavanai",
             },
             {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
+              label: "Twitter",
+              href: "https://twitter.com/navan_ai",
+            },
+            {
+              label: "YouTube",
+              href: "https://www.youtube.com/@navan-ai",
             },
           ],
         },
         {
-          title: 'More',
+          title: " ",
+        },
+        {
+          title: "Company Headquarters",
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              html: `Singapore: 6 Eu Tong Sen Street #09-10 · The Central · Singapore 059817.`,
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Navan AI Pte Ltd.`,
     },
     prism: {
       theme: prismThemes.github,

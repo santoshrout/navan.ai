@@ -21,3 +21,25 @@ slorber:
     linkedin: sebastienlorber
     github: slorber
     newsletter: https://thisweekinreact.com
+
+gokul:
+  name: Gokul Chandan
+  title: Frontend Developer at navan.ai
+  url: https://www.linkedin.com/in/gokul-va-14a304a5/
+  
+sushmith:
+  name: Sushmith Banoth
+  title: Product Evangelist at navan.ai
+  url: https://www.linkedin.com/in/sushmith-n/
+  image_url: https://avatars.githubusercontent.com/u/107675589?v=4
+
+santosh:
+  name: Santosh Rout
+  title: Founder @ navan.ai
+  url: https://linkedin.com/santoshrout
+  image_url: https://avatars.githubusercontent.com/u/19465011?v=4
+  page: true
+  socials:
+    x: xsantoshrout
+    github: santoshrout
+
